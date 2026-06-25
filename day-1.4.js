@@ -10,8 +10,8 @@ and the line where a let or const variable is declared.
 
 
 // Example 1
-console.log(num);
-let num = 20;
+// console.log(num);
+   let num = 20;
 // Output :  ReferenceError: Cannot access 'num' before initialization
 
 
