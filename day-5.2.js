@@ -8,11 +8,13 @@ let user = {
     name: "Mansoor"
 };
 
-let users = new WeakSet();
+let userss = new WeakSet();
+userss.add(user);
+console.log(userss.has(user));
 
-users.add(user);
-
-console.log(users.has(user));
+/*users   → WeakSet
+  user    → Variable
+{ name: "Mansoor" } → Normal object stored in the WeakSet  */
 
 
 
@@ -33,5 +35,9 @@ let users = {
 let wm = new WeakMap();
 
 wm.set(users, "Admin");
-
 console.log(wm.get(users));
+
+/* wm               → WeakMap
+   user             → Variable
+{ name: "Mansoor" } → Key Object ✅
+  "Admin"           → Value   */
